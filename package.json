@@ -1,0 +1,18 @@
+{
+  "name": "encrypt-alura",
+  "version": "1.0.0",
+  "description": "Programa de encritaçao de palavras(desafio Alura Challenger)",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./src/input.css -o ./src/assets/css/main.css --watch",
+    "minify":"npx tailwindcss -o ./src/assets/css/main.min.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "wesley-reis"
+  },
+  "author": "Wesley.reis",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.0.15"
+  }
+}
