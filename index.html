@@ -79,10 +79,11 @@
             <!-- Se ouver mensagem criptografada -->
             <div id="isMessage"
                 class="hidden flex-col justify-between min-h-[90%] xl:min-h-[97%] bg-white p-5 rounded-2xl shadow-lg shadow-gray-100 dark:bg-gray-800 dark:shadow-md dark:shadow-gray-700">
-                <p id="outputText" class="text-sm text-gray-400 font-normal dark:text-white overflow-y-auto"></p>
+                <textarea name="outputText" id="outputText"class="bg-transparent  border-none outline-none min-h-[100px] xl:min-h-[400px] p-1 text-sm text-gray-400 font-normal dark:bg-gray-800 dark:text-white overflow-y-auto" cols="30"></textarea>
                 <button id="copy" class="w-full mt-5 text-blue-800 text-sm py-4 rounded-2xl border border-blue-700 hover:border-blue-900 hover:font-medium
                 dark:text-white dark:border-gray-300">Copiar</button>
             </div>
+            
         </div>
 
         <div class="col-span-12 text-sm text-center w-full mx-auto bottom-0 p-2 xl:py-10">
@@ -93,6 +94,10 @@
                     class="text-gray-900 dark:text-white font-bold">D</b>eveloper
             </a>
         </div>
+    </div>
+
+    <div id="msg" class="hidden absolute top-2 right-1 px-4 py-2 bg-gray-700 dark:bg-blue-50 drop-shadow-sm shadow-gray-200 rounded-md">
+        <span id="msgText" class="text-sm text-center text-white dark:text-black"></span>
     </div>
 
 

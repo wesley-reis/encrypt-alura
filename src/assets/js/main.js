@@ -1,5 +1,6 @@
 var btnCript = document.querySelector('#cript');
 var btnDescript = document.querySelector('#descript');
+var btnCopy = document.querySelector('#copy');
 
 btnCript.addEventListener('click', () => {
     event.preventDefault();
@@ -10,6 +11,11 @@ btnCript.addEventListener('click', () => {
 
     var view = setText(cript);
 
+    if (view === false) {
+        msg("Digite um texto para Criptografar.");
+    }else{
+        msg("Texto Criptografado com sucesso!");
+    }
     outputView(view);
 });
 
@@ -23,8 +29,43 @@ btnDescript.addEventListener('click', () => {
 
     var view = setText(descript);
 
+    if (view === false) {
+        msg("Digite um texto para Descriptografar.");
+    }else{
+        msg("Texto Descriptografado com sucesso!");
+    }
+
     outputView(view);
 });
+
+
+btnCopy.addEventListener('click', () => {
+    event.preventDefault();
+    copy();
+});
+
+//copy text
+function copy(){
+    var input = document.querySelector('#outputText');
+    input.select();
+    document.execCommand("copy");
+    msg('Texto copiado');
+}
+
+function msg(value){
+    var msg = document.querySelector('#msg');
+    var msgText = document.querySelector('#msgText');
+
+
+    msg.classList.add('hidden')
+
+    setTimeout(()=>{
+        msg.classList.add('hidden')
+    }, 5000);
+
+    msgText.textContent = value;
+    msg.classList.remove('hidden');
+}
 
 // Descriptografar texto
 function descriptografar(text){
@@ -87,7 +128,7 @@ function setText(text){
     var outputText = document.querySelector('#outputText');
 
     if(text.length > 3){
-        outputText.textContent = text
+        outputText.value = text
         return true;
     }
 
