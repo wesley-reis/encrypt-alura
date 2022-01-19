@@ -10,4 +10,4 @@
 
 ## ScreenShots
 
-![video](https://user-images.githubusercontent.com/69157081/150193684-8311833d-22e0-4a76-8c10-bf5c32243e4e.mp4)
+![Watch the video](https://user-images.githubusercontent.com/69157081/150193684-8311833d-22e0-4a76-8c10-bf5c32243e4e.mp4)
