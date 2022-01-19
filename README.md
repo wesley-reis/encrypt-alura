@@ -6,7 +6,7 @@
 
 ``npm run install
 ``
-> [👉 Visite a página do projeto 👈](https://wrrdev.com/encript)
+> [👉 Visite a página do projeto 👈](http://encript.wrrdev.com)
 
 ## Preview
 
