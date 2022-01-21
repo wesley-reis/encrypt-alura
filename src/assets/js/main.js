@@ -119,6 +119,13 @@ function criptografar(text){
 // pega o texto do input
 function getText(){
     var text = document.querySelector("#textArea").value
+
+    //retorna erro se tiver numero no texto
+    // if (! /^[a-zA-z]+$/.test(text)) {
+    //     msg("Ooops, parece que você digitou número e não e permitido")
+    //     return;
+    // }
+
     return text.toLowerCase();
 }
 
